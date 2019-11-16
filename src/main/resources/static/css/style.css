@@ -1,0 +1,33 @@
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+.mainpage {
+    background-image: url('/img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    border-radius: 15px;
+    border: 5px solid #227700;
+    box-sizing: border-box;
+    padding-left: 10px;
+    margin-bottom: 35px;
+}
+
+.navigationbar {
+    height: 60px;
+    background-image: url('/img/candy.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navigationbar2 {
+    background:linear-gradient(to bottom,#444,transparent,transparent,#444);
+    height: 60px;
+}
+
+.footer {
+    text-align: right;
+}

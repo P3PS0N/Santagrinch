@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <div th:replace="fragments/admin :: header"></div>
+
+    <main role="main" class="container pt-5">
+    	<h3 class="mt-5">Product list</h3>
+
+        <table id="products" class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Price</th>
+                </tr>
+            </thead>
+
+            <tbody id="product_table">
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </main>
+
+    <div th:replace="fragments/footer :: footer"></div>
+
+    <script type="text/javascript" src="/webjars/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+</body>
+</html>
